@@ -66,18 +66,7 @@
 # even_count  8 Odd_count  6
 
 # 6. Write a program that takes a list of integers and returns the sum of all the even numbers. If the sum of even numbers exceeds 100, print "Limit Exceeded" and stop.
-l=[50,12,2,5,6,7,8,20,24,56]
-sum=0
-for i in l:
-    if(i%2==0):
-        if(sum+i>100):
-            print(sum,'Limit Exceeded')
-            break;
-        else:
-            sum+=i
-            print(sum)
-
-
+#  
 
 # 7. Write a program that prints the following pattern of stars:
     

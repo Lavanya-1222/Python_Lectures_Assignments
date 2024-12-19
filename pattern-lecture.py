@@ -68,8 +68,8 @@ for i in range(6):
 # * *
 # *
 n=5
-for i in range(n):
-    for s in range(n-i):
+for i in range(1,n):
+    for s in range(1,n-i):
         print(' ',end=" ")
     for j in range(i):
         print('*',end=" ")

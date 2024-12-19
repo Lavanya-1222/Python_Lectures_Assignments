@@ -1,3 +1,9 @@
-n=int(input())
+# 
 
-print("divisible by 5 and 10") if (n%5==0) and (n%10==0) else print("not divisible by 5 and 10")
+name=input('Enter Full name ')
+l=name.split(" ")
+
+if len(l)==3:
+    print(f'First_name: {l[0]}\n Last_name: {l[1]}\nMiddle_name: {l[2]}')
+else:
+    print("full name not found")
