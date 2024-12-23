@@ -278,4 +278,20 @@ print(s)
 print(type(s))
 print(len(s))
 
+n='y'
+while(n!='n'):
+
+    n=input("enter y if want to continue n if not: ")
+    print('welcome')
+
+n=int(input("Enter Number: "))
+n1=0
+n2=1
+print(n1,n2,end=" ")
+
+while():
+     c=n1+n2
+     print(c,end=" ")
+     n1=n2
+     n2=c
 
