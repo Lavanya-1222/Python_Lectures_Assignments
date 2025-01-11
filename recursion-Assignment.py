@@ -48,21 +48,6 @@
 
 
 #6 Write a Python program to print the first 10 Fibonacci numbers using a loop.
-# n=int(input("enter no: "))
-# n1=0
-# n2=1
-# print(n1,n2)
-# for i in range(n-2):
-#     c=n1+n2
-#     print(c)
-#     n1=n2
-#     n2=c
-# output:
-# enter no: 5
-# 0 1
-# 1
-# 2
-# 3
 
 
 #7 Create a dictionary where keys are numbers from 1 to 5, and values are their squares. Iterate over this dictionary to print each key-value pair.
@@ -165,14 +150,15 @@
 
 
 #14 Write a program to generate Pascal's triangle up to a given number of rows using nested loops.
-n=int(input("enter no: "))
+# n=int(input("enter no: "))
 
 
 #15 Create a lambda function to filter out even numbers from a list of integers.
-l=[10,20,30,40,50]
-# print((lambda k:for k in l k if k%2==0 )(l))
-
-
+# l=[10,20,33,40,51]
+# for k in l:
+#    if (lambda i: i%2==0)(k):
+#       print(k)
+# output: 10,20,30
 
 
 #16 Write a Python program to reverse the words in a sentence using list comprehensions and string manipulation.
@@ -184,6 +170,13 @@ l=[10,20,30,40,50]
 
 
 #17 Write a recursive function to compute the sum of all elements in a nested list (e.g., [[1, 2, [3, 4]], 5]).
+sum=0
+l=[[1, 2, [3, 4]], 5]
+f=[]
+for i in l:
+    if type(i)==list:
+ 
+
 
 #18 Use a nested loop to create the following pattern:
 # *  
@@ -200,6 +193,5 @@ l=[10,20,30,40,50]
 # {'am': 2, 'python': 2, '': 41, 'javascript': 1, 'included': 1}
 
 #20 Write a Python program that takes a list of tuples, sorts them based on the second element of each tuple using a lambda function, and prints the result.
-l=[(10,20),(30,40),(50,1),(60,2)]
-print(sorted(l,key=lambda l:l[1]))
-pr
+# l=[(10,20),(30,40),(50,1),(60,2)]
+# print(sorted(l,key=lambda l:l[1]))
