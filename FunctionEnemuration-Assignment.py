@@ -116,13 +116,14 @@
 # {1: 1, 3: 27, 5: 125, 7: 343, 9: 729}
 
 
+
 #13 Implement a higher-order function that takes a list of numbers and a lambda function, then applies the lambda to filter out non-prime numbers.
-def hof([1,2,13,14,17])
 
 
 #14 Create a function that returns a nested dictionary representing the Fibonacci series up to n levels. The keys should be the position, and the values should be the Fibonacci numbers.
 
 #15 Write a program to sort a list of tuples (name, age) by age using the sorted function and a lambda.
+
 
 #16 Implement a program that reads a string, reverses it, and counts the frequency of vowels and consonants using comprehensions and sets.
 

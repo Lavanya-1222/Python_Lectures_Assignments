@@ -167,7 +167,7 @@
 #     Output:  
     
 #     Error: File not found.
-with open('sample.txt')
+# with open('sample.txt')
 
 # 11. Write a program that accepts a list of integers and calculates their sum. If a non-integer value is encountered, skip it and display an error message.  
 #     Input: List = [10, "abc", 20]  
@@ -175,7 +175,19 @@ with open('sample.txt')
     
 #     Error: Invalid input for "abc"
 #     Sum = 30
-    
+# List = [10, "abc", 20] 
+# sum=0
+# for i in List:
+#     try:
+#          sum=sum+int(i) 
+#     except:
+#          print("Invalid input for ",i)  
+# print("Sum=",sum) 
+# output:
+# Invalid input for  abc
+# Sum= 30
+
+
 
 # 12. Write a program that continuously prompts the user for numbers and calculates the average. Allow the user to type "done" to exit and handle invalid inputs gracefully.  
 #     Input: 10, abc, 20, done  
@@ -183,21 +195,92 @@ with open('sample.txt')
     
 #     Error: Invalid input for "abc"
 #     Average = 15.0
-    
+# print()
+# v=input("Enter number/Enter done once you completed ")
+# sum=0
+# l=0
+# while(v!='done'):
+#     try:
+#       sum+=int(v)
+#       l+=1
+#     except:
+#        print("Invalid input for ",v)
+#     v=input("Enter number ")
+# print("Avg=",sum/l)
+# output:
+# Enter number/Enter done once you completed 10
+# Enter number 10
+# Enter number 10
+# Enter number done
+# Avg= 10.0
+
+
 
 # 13. Write a program to simulate a login system where the user has 3 attempts to enter the correct password. Use exception handling to handle invalid input types (e.g., integers instead of strings).  
 #     Input: Password = 123  
 #     Output:  
     
 #     Error: Password must be a string.
+# pwd='lava@2203'
+# j=0
+# for i in range(3):
+#     p=input("Enter Password ")
+#     try: 
+#        p=int(p)
+#        print("password should be in form of string ")
+#        j+=1
+#     except:
+#         if p==pwd:
+#             print("logined succefully ")
+#             break
+
+#         j+=1
+# if j>=3:
+#     print("Password is locked")
+# output:
+# Enter Password 123
+# password should be in form of string 
+# Enter Password lava@2203
+# logined succefully 
+# Enter Password 123
+# password should be in form of string
+# Enter Password 123
+# password should be in form of string
+# Enter Password 123
+# password should be in form of string
+# Password is locked
+
     
+
+   
 
 # 14. Write a program to calculate the factorial of a number using a loop. Use exception handling to catch invalid inputs (negative numbers or non-integer values).  
 #     Input: Number = -5  
 #     Output:  
     
 #     Error: Factorial is not defined for negative numbers.
-    
+# n=int(input("Enter no "))
+# while(True):
+#      try: 
+#           if n>0:
+#                break
+#           else:
+#                n=int(input("Enter no in positive"))
+#      except: 
+#           n=int(input("only postive integers are allowed"))
+# fact=1
+# for i in range(1,n+1):
+#       fact*=i
+# print("Factorial",fact)
+# output:
+# Enter no -2
+# Enter no in positive5
+# Factorial 120
+# Enter no -2
+# Enter no in positiveabc
+# only postive integers are allowed5
+# Factorial 120
+
 
 # 15. Write a program that reads a list of integers from the user and prints the largest. Handle cases where the list contains non-integer values or is empty.  
 #     Input: List = ["10", "abc", "30"]  
@@ -205,4 +288,12 @@ with open('sample.txt')
     
 #     Error: Invalid input for "abc"
 #     Largest = 30
-    
+l=list(map(str,input("Enter nos ").split(" ")))
+max=0
+for i in l:
+    try: 
+        if int(i)>max:
+            max=int(i)
+    except:
+        print("Invalid input for",i)
+print("Largest element ",max)
