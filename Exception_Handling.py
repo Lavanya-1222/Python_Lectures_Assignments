@@ -288,12 +288,16 @@
     
 #     Error: Invalid input for "abc"
 #     Largest = 30
-l=list(map(str,input("Enter nos ").split(" ")))
-max=0
-for i in l:
-    try: 
-        if int(i)>max:
-            max=int(i)
-    except:
-        print("Invalid input for",i)
-print("Largest element ",max)
+# l=list(map(str,input("Enter nos ").split(" ")))
+# max=0
+# for i in l:
+#     try: 
+#         if int(i)>max:
+#             max=int(i)
+#     except:
+#         print("Invalid input for",i)
+# print("Largest element ",max)
+# output:
+# Enter nos 1 2 3 30 5 60 abc
+# Invalid input for abc
+# Largest element  60  
