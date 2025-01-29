@@ -141,3 +141,97 @@
 #     if i%3==0 and i%5==0:
 #         print(i,end=" ")
 #     i+=1
+
+
+# 16. Create a program that prints the reverse of a given string using a while loop.
+# s=input("enter s string ").split(" ")
+# i=len(s)-1
+# r=[]
+# while(i>=0):
+#     r.append(s[i])
+#     i-=1
+# print(" ".join(r))
+
+
+# 17. Write a program that finds the largest number in a list using a for loop.
+# l=list(map(int,input("enter element ").split(" ")))
+# max=0
+# for i in l:
+#     if i>max:
+#         max=i
+# print("Largest is",max)
+
+
+# 18. Implement a program that generates the squares of numbers from 1 to n using a for loop.
+# n=int(input("enter no "))
+# for i in range(1,n+1):
+#     print(i**2,end=" ")
+
+# 19. Write a program that prints a pattern of numbers in the following format using a for loop:
+    
+#     1
+#     2
+#     3
+#     4
+# for i in range(1,5):
+#     print('\t',i)
+
+    
+
+# 20. Write a program that counts the number of vowels in a given string using a while loop.
+# s=input("Enter string ")
+# i=0
+# c=0
+# while(i<len(s)):
+#     if s[i] in 'aioueAOIUE':
+#         c+=1
+#     i+=1
+# print("count",c)
+
+
+
+# Write a program to find the smallest number in a list using a for loop.
+# l=list(map(int,input("enter elements ").split(" ")))
+# min=l[0]
+# for i in l:
+#     if i<min:
+#         min=i
+# print("Smallestnumber is",min)
+
+
+# Print numbers from n to 1 in descending order using a while loop.
+# n=int(input("enter no "))
+
+# while(n>=1):
+#     print(n,end=" ")
+#     n-=1
+
+
+# Print all elements of a list that are greater than a given number using a for loop.
+# l=list(map(int,input("enter elements ").split(" ")))
+# n=int(input("Enter a no "))
+# for i in l:
+#     if i>n:
+#         print(i,end=" ")
+
+
+# Count how many even and odd numbers are in a given list using a for loop.
+# l=list(map(int,input("enter elements ").split(" ")))
+# even_c=0
+# odd_c=0
+# for i in l:
+#     if i%2==0:
+#         even_c+=1
+#     else:
+#         odd_c+=1
+# print("Even Count=",even_c)
+# print("Odd_count=",odd_c)
+
+
+# Count the number of vowels in a given string using a for loop.
+s=input("enter s string ")
+c=0
+for i in s:
+    if i in 'AIOUEaioue':
+        c+=1
+print("No.of Vowels",c)
