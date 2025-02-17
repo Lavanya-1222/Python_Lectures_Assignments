@@ -195,18 +195,27 @@
 # 130
 
 
-# 5. Write a program to find the second largest number in a list without sorting it.  
+# 5. Write a program to find the second largest number in a list without sorting it. 
+# from copy import copy 
 # l=[1,2,3,40,50,60,70]
-
+# l2=copy(l)
+# l2.remove(max(l))
+# print("Secound_Highest",max(l2))
+# output:Secound_Highest 60
 
 
 # 6. Write a function that accepts a list of strings and returns the longest string 
 # using the reduce function.  
+# l=['lavanya','i','am','painte']
+# from functools import reduce
+# r=reduce(lambda x,y:x if len(x)>len(y) else y,l)
+# print(r)
+# output:lavanya 
 
 
 # 7. Your task is to create a program that prints a pyramid pattern of stars based on user input. 
 # The input specifies the number of levels in the pyramid.  
-n=int(input("Enter no: "))
+# n=int(input("Enter no: "))
 # for i in range(1,n+1):
 #     for p in range(n-i):
 #         print(" ",end="")
@@ -217,8 +226,23 @@ n=int(input("Enter no: "))
 
 
 # 8. A fictional app collects user age data. Write a program to categorize ages into groups 
-# (child, teen, adult, senior) using a nested conditional.  
-age=[10,18,21,45]
+# # (child, teen, adult, senior) using a nested conditional.  
+# age=int(input("Enter age "))
+# if age<=12:
+#     print("Child")
+# elif age in range(13,20):
+#     print("Teen")
+# elif age in range(20,60):
+#     print("adult")
+# elif age>65:
+#     print("Senior")
+# output:
+# Enter age 8
+# Child
+# Enter age 67
+# Senior
+# Enter age 25
+# adult
 
 
 # 9. You are building a simulation for a bakery. The program should prompt the user to 
@@ -239,6 +263,7 @@ age=[10,18,21,45]
 #     elif k=='chacolava':
 #         sum+=v*100
 # print(sum)
+# output
 # Enter no of items you want 2
 # Enter type of pastry pinapple
 # Enter qty 2
@@ -247,5 +272,84 @@ age=[10,18,21,45]
 # {'pinapple': 2, 'chacolava': 1}
 # 200
 
+# 10. A treasure map is represented as a 5x5 grid where 'X' marks a treasure and 'O' represents empty spots. 
+# Write a program that takes user input to navigate the grid and display the status after each move. 
+# Make sure to include boundary conditions and invalid input handling.  
+# map=[
+# ['O','O','O','O','O'],
+# ['O','O','O','O','O'],
+# ['O','O','X','O','O'],
+# ['O','O','O','O','O'],
+# ['O','O','O','O','O']]
+# print(map)
 
-                 
+# r,c=1,1
+# def validMove(r,c):   
+#     if r<0 or r>5 or c<0 or c>5:
+#         return False
+#     else:
+#         return True
+    
+    
+# def move(map,direction):
+#     global r,c
+#     if direction=='up':
+#             r=r-1
+#     elif direction=='down':
+#             r=r+1
+#     elif direction=='left':
+#             c=c-1
+#     elif direction=='right':
+#             c=c+1 
+
+#     for i in map:
+#         for j in i:
+#             print(j,end=" ")
+#         print()
+#     if  not validMove(r,c):
+#         print("Invalid Valid")
+#         return 
+    
+#     if map[r][c]=='X':
+#         return "Congraculations you found Treager"
+   
+# while(True):
+#     direction=input(("Tresure not foun select move "))
+#     p=move(map,direction)
+#     if p:
+#         print(p)
+#         break
+
+#output:
+# your at 1,1 position
+# Tresure not foun select move down
+# O O O O O
+# O O O O O
+# O O O O O
+# O O X O O
+# O O O O O
+# O O O O O
+# Tresure not foun select move right
+# O O O O O
+# O O O O O
+# O O X O O
+# O O O O O
+# O O O O O
+# Congraculations you found Treager
+        
+
+    
+    
+
+
+    
+
+   
+            
+
+        
+            
+
+
+
+

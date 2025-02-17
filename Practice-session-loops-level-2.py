@@ -229,9 +229,21 @@
 
 
 # Count the number of vowels in a given string using a for loop.
-s=input("enter s string ")
-c=0
-for i in s:
-    if i in 'AIOUEaioue':
-        c+=1
-print("No.of Vowels",c)
+# s=input("enter s string ")
+# c=0
+# for i in s:
+#     if i in 'AIOUEaioue':
+#         c+=1
+# print("No.of Vowels",c)
+
+s='12:45:54PM'
+list=s.split(":")
+print(list)
+
+if list[2][-2:]=='AM' and list[0]=='12':
+    print(s)
+elif list[2][-2:]=='PM' and list[0]!='12':
+    list[0]=str(int(list[0])+12)
+    print(":".join([list[0],list[1],list[2][:2]]))
+else:
+    print(s)
