@@ -49,6 +49,23 @@
 
 
 # Q9. Explain Python’s list comprehensions.
+# Code Readability: if provide more readable way to create a list insted of using loop and conditions in multiple lines 
+# effieneccy: compaire to loop it is faster and use less memory 
+# e.g 
+# import timeit
+# l=list(range(100000))
+
+# time_comprehension = timeit.timeit('[i for i in l]', globals=globals(),number=1000)
+# time_comprehension2 = timeit.timeit('''
+# l2 = []
+# for i in l:
+#     l2.append(i)
+# ''', globals=globals(), number=1000)
+# print(time_comprehension)
+# print(time_comprehension2)
+
+
+
 
 
 # Q10. What is difference between module and a package?
