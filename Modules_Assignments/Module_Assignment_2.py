@@ -30,7 +30,7 @@ while(ch!=3):
         
         Patient.patient_register(patients,doctors)
         Doctor.doctor_assignment(patients)
-    elif ch==3:
+    elif ch==3:hhh
         Doctor.diplay_doctor(doctors)
     ch=int(input("Enter your Choice "))
 
