@@ -1,0 +1,21 @@
+EmployeeID,Name,Department,JoiningDate,Salary,WorkingHours,LastPromotionDate,Email
+101,John Doe,HR,2018-01-31,55000,40,2020-01-31,john.doe@example.com
+102,Jane Smith,IT,2018-07-31,72000,42,2020-11-30,jane.smith@example.com
+103,Alice Johnson,Finance,2019-01-31,65000,38,2021-09-30,alice.johnson@example.com
+104,Bob Brown,Marketing,2019-07-31,80000,45,2022-07-31,bob.brown@example.com
+105,Charlie Davis,HR,2020-01-31,50000,39,2023-05-31,charlie.davis@example.com
+106,Emma Wilson,IT,2020-07-31,73000,41,2024-03-31,emma.wilson@example.com
+107,Liam Miller,Finance,2021-01-31,67000,37,2025-01-31,liam.miller@example.com
+108,Olivia Taylor,Marketing,2021-07-31,85000,46,2025-11-30,olivia.taylor@example.com
+109,Noah Anderson,HR,2022-01-31,52000,40,2026-09-30,noah.anderson@example.com
+110,Sophia Thomas,IT,2022-07-31,76000,44,2027-07-31,sophia.thomas@example.com
+111,James White,Finance,2023-01-31,64000,39,2028-05-31,james.white@example.com
+112,Isabella Harris,Marketing,2023-07-31,87000,47,2029-03-31,isabella.harris@example.com
+113,Mason Martin,HR,2024-01-31,54000,38,2030-01-31,mason.martin@example.com
+114,Mia Clark,IT,2024-07-31,71000,42,2030-11-30,mia.clark@example.com
+115,Ethan Rodriguez,Finance,2025-01-31,68000,36,2031-09-30,ethan.rodriguez@example.com
+116,Ava Lewis,Marketing,2025-07-31,89000,48,2032-07-31,ava.lewis@example.com
+117,Lucas Walker,HR,2026-01-31,56000,41,2033-05-31,lucas.walker@example.com
+118,Amelia Hall,IT,2026-07-31,78000,43,2034-03-31,amelia.hall@example.com
+119,Benjamin Allen,Finance,2027-01-31,66000,37,2035-01-31,benjamin.allen@example.com
+120,Harper Young,Marketing,2027-07-31,90000,49,2035-11-30,harper.young@example.com

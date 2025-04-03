@@ -1,4 +1,5 @@
-#Flipping Bits
+"""
+#1 Flipping Bits
 # n=int(input("Enter no "))
 # l=''
 # while(n!=0):
@@ -30,7 +31,7 @@
 
 # print(int('1000',2))
 # print(type(format(8,'b')))
-"""
+'''
 n=int(input("enter no "))
 if(True):
     x=format(n,'b')
@@ -44,11 +45,14 @@ if(True):
         elif i=='1':
             final+='0'
     print(int(final,2))
-   """
+   '''
 
 # print(len(l))
+"""
 
-# Counting_Sort
+
+
+#2 Counting_Sort
 """ 
 
 def countingSort(arr):
@@ -84,7 +88,9 @@ print(countingSort([1,1,3,2,1]))"
 
 # print(valley)
 
-# String Pangram or not 
+
+
+#3 String Pangram or not 
 # import string
 # s=input("enter string ").lower()
 # print(string.ascii_letters)
@@ -95,7 +101,7 @@ print(countingSort([1,1,3,2,1]))"
 #     print("Not")
 
 
-# Mars Exploration
+#4 Mars Exploration
 # s='sossot'
 # c=0
 # for i in range(0,len(s),3):
@@ -112,20 +118,89 @@ print(countingSort([1,1,3,2,1]))"
 # print(c)
 
 
-# Permutation Two Array
-a=[0,1]
-b=[0,2]
+#5 Permutation Two Array
+# a=[0,1]
+# b=[0,2]
 
-a.sort()
-print(a)
-b.sort(reverse=True)
-print(b)
-k=1
-f=1
-for i in range(len(a)):
-    if k>(a[i]+b[i]):
-        f=0
-if f==1:
-    print("Yes")
-else:
-    print("No")
+# a.sort()
+# print(a)
+# b.sort(reverse=True)
+# print(b)
+# k=1
+# f=1
+# for i in range(len(a)):
+#     if k>(a[i]+b[i]):
+#         f=0
+# if f==1:
+#     print("Yes")
+# else:
+#     print("No")
+    
+
+#     """
+
+
+#6 Subarray Division 2 
+"""
+lst=list(map(int,input().split(" ")))
+d=15
+m=4
+c=0
+sm=sum(lst[0:m])
+if sm==d:
+    c+=1
+j=1
+while(j<len(lst)):
+    if (sum(lst[j:j+m]))==d:
+        c+=1
+    j+=1
+print(c)
+    """
+                   
+
+"""  
+#7 XOR
+s1=input("enter string1 ")
+s2=input("enter string2 ")
+result=''
+for i in range(len(s1)):
+    if s1[i]==s2[i]:
+        result+='0'
+    else:
+        result+='1'
+print(result)
+
+#8 Sales by Match
+soks=[1,2,1,2,1,3,2,1]
+d={}
+for i in soks:
+    if i in d:
+        d[i]+=1
+    else:
+        d[i]=1
+
+sum=0
+for i in d.values():
+    sum+=i//2
+print(sum)
+
+""" 
+"""
+#9 Migratory Birds
+lst=[1,1,2,2,3]
+
+d={}
+for i in lst:
+    if i in d:
+        d[i]+=1
+    else:
+        d[i]=1
+print(d)
+
+mx=max(d.values())
+list=[]
+for i in d:
+    if d[i]==mx:
+        list.append(i)
+print(min(list))"
+"""
