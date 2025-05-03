@@ -10,16 +10,22 @@
 # The result should only include tuples where the intersection of the two sets is not empty.
 
 
-[({1, 2, 3}, {3, 4, 5}),({6, 7}, {8, 9}),({10, 11, 12}, {11, 13, 14}),({15}, {16})]
-l=eval(input())
-result=[]
-for i in range(len(l)):
-    if len(l[i][0].intersection(l[i][1]))!=0:
-     result.append((l[i][0],l[i][1],l[i][0].intersection(l[i][1])))
+# [({1, 2, 3}, {3, 4, 5}),({6, 7}, {8, 9}),({10, 11, 12}, {11, 13, 14}),({15}, {16})]
+# l=eval(input())
+# result=[]
+# for i in range(len(l)):
+#     if len(l[i][0].intersection(l[i][1]))!=0:
+#      result.append((l[i][0],l[i][1],l[i][0].intersection(l[i][1])))
 
-print(result)
+# print(result)
 
-print
+# print
+
+
+
+
+
+
 
 
 
